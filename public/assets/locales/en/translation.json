@@ -1,0 +1,19 @@
+{
+    "welcomeHeader": {
+      "dashboardPage": {
+        "title": "Dashboard",
+        "subtitle": "Hello, welcome to your Dashboard"
+      },
+  
+      "webinairePage": {
+        "title": "Webinar",
+        "subtitle": "Hello, welcome to your Webinar"
+      },
+  
+      "profilePage": {
+        "title": "Profile",
+        "subtitle": "Hello, welcome to your Profile"
+      }
+    }
+  }
+  
