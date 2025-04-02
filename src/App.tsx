@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
@@ -6,23 +6,22 @@ import { ColorModeContext, useMode } from "./context/theme/theme";
 import { MyProSidebarProvider } from "./context/sidebar/sidebarContext";
 import Topbar from "./layouts/topbar/Topbar";
 import { useKeycloak } from "./context/keycloak/KeycloakContext";
+import DashboardPage from "./pages/dashboard/DashboardPage";
 
 type Props = {};
 
 const App = ({}: Props) => {
-
   // *********************************  S T A T E*********
 
-  const {keycloak}=useKeycloak()
+  const { keycloak } = useKeycloak();
   const [theme, colorMode] = useMode();
 
   const { pathname } = useLocation();
 
   console.log(pathname.split("/").length);
 
-
   // *****************verification
-  console.log(keycloak)
+  console.log(keycloak);
 
   // ***************************  R E N D E R*******
   return (
@@ -34,16 +33,16 @@ const App = ({}: Props) => {
         }
       }
     >
-      {/* Le `ThemeProvider` applique le thème (`theme`) à tous les composants enfants */}
       <ThemeProvider theme={theme}>
-        {/* `CssBaseline` réinitialise les styles CSS par défaut pour garantir une base propre et cohérente */}
         <CssBaseline />
         <MyProSidebarProvider>
           <div style={{ height: "100%", width: "100%" }}>
             <main>
               <Topbar />
 
-              {/* <Outlet /> */}
+              {pathname == "/" && <DashboardPage />}
+
+              <Outlet />
             </main>
           </div>
         </MyProSidebarProvider>

@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import KeycloakContextProvider from "./context/keycloak/KeycloakContext.tsx";
 import ProtectedRouteAdmin from "./utils/ProtectedRouteAdmin.tsx";
+import WebinairePage from "./pages/webinaire/WebinairePage.tsx";
+import DashboardPage from "./pages/dashboard/DashboardPage.tsx";
 
 const route = createBrowserRouter([
   {
@@ -13,6 +15,18 @@ const route = createBrowserRouter([
         <App />
       </ProtectedRouteAdmin>
     ),
+
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardPage />,
+      },
+
+      {
+        path: "/webinaires",
+        element: <WebinairePage />,
+      },
+    ],
   },
 ]);
 

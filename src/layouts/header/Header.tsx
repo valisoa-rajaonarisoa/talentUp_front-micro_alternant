@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { tokens } from "../../context/theme/mui/theme";
+import { tokens } from "../../context/theme/theme";
 
 type Props = {
   title: string;
