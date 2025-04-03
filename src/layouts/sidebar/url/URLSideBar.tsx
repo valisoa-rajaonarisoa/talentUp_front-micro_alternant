@@ -1,10 +1,11 @@
 import { Box } from "@mui/material";
 import { useProSidebar } from "react-pro-sidebar";
 import Item from "./Item";
-import { URLType } from "../../../typescript/module";
+import { IRoute } from "../../../typescript/module";
+
 
 type Props = {
-  link: URLType[];
+  link: IRoute[];
 };
 
 const URLSideBar = ({ link }: Props) => {

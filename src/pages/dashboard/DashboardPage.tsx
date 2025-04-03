@@ -84,7 +84,7 @@ const DashboardPage = ({}: Props) => {
       <div>
         <Statistique data={data} />
 
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4 mt-5">
           <div className="w-full md:w-1/2">
             <LineChart
               title="Inscriptions des utilisateurs"

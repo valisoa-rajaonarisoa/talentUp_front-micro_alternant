@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Header from "../../layouts/header/Header";
+import Webinaire from "../../components/webinaire/Webinaire";
 
 
 type Props = {};
@@ -14,6 +15,10 @@ const WebinairePage = ({}: Props) => {
         title={t("welcomeHeader.webinairePage.title")}
         subtitle={t("welcomeHeader.webinairePage.subtitle")}
       />
+
+      <div>
+        <Webinaire/>
+      </div>
     </div>
   );
 };

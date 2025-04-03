@@ -19,18 +19,19 @@ export const RouteURL: IRoute[] = [
     icon: <SlowMotionVideoOutlinedIcon />,
   },
   {
+    path: "/alternants",
+    name: "alternants",
+    icon: <EngineeringIcon />,
+  },
+  {
     path: "/entreprises",
-    name: "entreprise",
+    name: "entreprises",
     icon: <ApartmentIcon />,
   },
   {
     path: "/apprenants",
-    name: "apprenant",
+    name: "apprenants",
     icon: <SchoolIcon />,
   },
-  {
-    path: "/alternants",
-    name: "alternant",
-    icon: <EngineeringIcon />,
-  },
+  
 ];

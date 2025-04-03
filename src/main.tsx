@@ -6,6 +6,9 @@ import KeycloakContextProvider from "./context/keycloak/KeycloakContext.tsx";
 import ProtectedRouteAdmin from "./utils/ProtectedRouteAdmin.tsx";
 import WebinairePage from "./pages/webinaire/WebinairePage.tsx";
 import DashboardPage from "./pages/dashboard/DashboardPage.tsx";
+import AlternantPage from "./pages/alternant/AlternantPage.tsx";
+import EntreprisePage from "./pages/entreprise/EntreprisePage.tsx";
+import ApprenantPage from "./pages/apprenant/ApprenantPage.tsx";
 
 const route = createBrowserRouter([
   {
@@ -25,6 +28,20 @@ const route = createBrowserRouter([
       {
         path: "/webinaires",
         element: <WebinairePage />,
+      },
+
+      {
+        path: "/alternants",
+        element: <AlternantPage />,
+      },
+      {
+        path: "/entreprises",
+        element: <EntreprisePage />,
+      },
+
+      {
+        path: "/apprenants",
+        element: <ApprenantPage />,
       },
     ],
   },

@@ -25,7 +25,7 @@ const Item = ({ path, icon, name }: Props) => {
   // ************localisation du page et hover *********
   if (hover || pathname.split("/").includes(name)) {
     isPageStyle = colors.greenAccent[500];
-  } else if (name == "dashboard" && pathname.split("/").length == 3) {
+  } else if (name == "dashboard" && pathname=="/") {
     isPageStyle = colors.greenAccent[500];
   } else {
     isPageStyle = colors.grey[100];

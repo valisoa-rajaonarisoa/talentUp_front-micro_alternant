@@ -1,16 +1,14 @@
-
 import { Typography } from "@mui/material";
 type Props = {
   data: {
     titre: string;
     total: number;
-    pourcentage: string;
+    pourcentage?: string;
     icon: JSX.Element;
-}[]
+  }[];
 };
 
-
-const Statistique = ({data}: Props) => {
+const Statistique = ({ data }: Props) => {
   return (
     <div className="w-full py-4 mt-10 flex flex-col space-y-5 md:space-x-5 md:flex md:flex-row md:flex-wrap">
       {data?.map((stat) => (
@@ -21,7 +19,9 @@ const Statistique = ({data}: Props) => {
           <div className=" w-[70%] flex flex-col space-y-5">
             <div>
               <Typography variant="h3" className="text-gray-800">
-                {stat.titre}
+
+                <h3>{stat.titre}</h3>
+                
               </Typography>
             </div>
 
@@ -31,10 +31,14 @@ const Statistique = ({data}: Props) => {
               </Typography>
             </div>
 
-            <div className="space-x-2">
-              <span className="text-green-400 text-xl">{stat.pourcentage}</span>{" "}
-              <span className="text-gray-500 text-lg">ce mois-ci </span>
-            </div>
+            {stat.pourcentage && (
+              <div className="space-x-2">
+                <span className="text-green-400 text-xl">
+                  {stat.pourcentage}
+                </span>{" "}
+                <span className="text-gray-500 text-lg">ce mois-ci </span>
+              </div>
+            )}
           </div>
 
           <div className=" w-[30%] h-full flex content-center">

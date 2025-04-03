@@ -1,6 +1,6 @@
 import { Typography, useTheme } from "@mui/material";
 import { tokens } from "../../../context/theme/theme";
-
+import logo from "../../../assets/logo.png"
 type Props = {
   userInfo: {
     email: string;
@@ -20,7 +20,7 @@ const UserProfileSideBar = ({ userInfo }: Props) => {
         <img
           alt="profile user"
           src={
-            "https://img.freepik.com/free-photo/cheerful-young-woman-taking-notes-while-sitting-steps-street_1153-6840.jpg?t=st=1742908585~exp=1742912185~hmac=996f987692cdade3b5f9c79303776512e99b8fd3e5b2c24e09d9a7b6156eb11b&w=740"
+            logo
           }
           className="object-cover"
         />
