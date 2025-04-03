@@ -1,10 +1,12 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { ColorModeContext, useMode } from "../../context/theme/mui/theme";
+
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
-import { MyProSidebarProvider } from "../../context/sidebar/sidebarContext";
-import Topbar from "../../layouts/topbar/Topbar";
+
 import DashboardPage from "./dashboard/DashboardPage";
+import { ColorModeContext, useMode } from "../context/theme/theme";
+import { MyProSidebarProvider } from "../context/sidebar/sidebarContext";
+import Topbar from "../layouts/topbar/Topbar";
 
 type Props = {};
 
@@ -14,7 +16,7 @@ const App = ({}: Props) => {
 
   const { pathname } = useLocation();
 
-  console.log(pathname.split("/").length)
+  console.log(pathname.split("/").length);
 
   return (
     // Le `ColorModeContext.Provider` fournit l'objet `colorMode` à tous les composants enfants via le contexte React

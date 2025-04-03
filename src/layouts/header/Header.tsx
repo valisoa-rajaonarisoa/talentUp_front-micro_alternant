@@ -14,7 +14,7 @@ const Header = ({ title, subtitle }: Props) => {
 
   // ****************** R E N D E R ************************
   return (
-    <Box sx={{ mb: "10px" }}>
+    <Box sx={{ mb: "10px"}}>
       <Typography
         variant="h2" //le fontsize ou  hauter
         color={colors.grey[100]} //la couluer
