@@ -3,7 +3,7 @@ import { useKeycloak } from "../context/keycloak/KeycloakContext";
 type Props = {
   children: React.ReactNode;
 };
-const ProtectedRouteAdmin = ({ children }: Props) => {
+const ProtectedRouteAlternant = ({ children }: Props) => {
   //   ****************initialisation de keycloak ***********
   const { keycloak, keycloakInitialized } = useKeycloak();
 
@@ -13,7 +13,7 @@ const ProtectedRouteAdmin = ({ children }: Props) => {
   // ****************si il est authentifié ***
   if (keycloak != null && keycloak.authenticated) {
     //   ****************verification du roles**
-    if (keycloak.realmAccess?.roles.includes("admin")) {
+    if (keycloak.realmAccess?.roles.includes("alternant")) {
       // ****return le children
       return children;
     } else {
@@ -26,4 +26,4 @@ const ProtectedRouteAdmin = ({ children }: Props) => {
   }
 };
 
-export default ProtectedRouteAdmin;
+export default ProtectedRouteAlternant;

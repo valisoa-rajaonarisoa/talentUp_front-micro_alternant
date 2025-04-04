@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import KeycloakContextProvider from "./context/keycloak/KeycloakContext.tsx";
-import ProtectedRouteAdmin from "./utils/ProtectedRouteAdmin.tsx";
+import ProtectedRouteAdmin from "./utils/ProtectedRouteAlternant.tsx";
 import WebinairePage from "./pages/webinaire/WebinairePage.tsx";
 import DashboardPage from "./pages/dashboard/DashboardPage.tsx";
 import AlternantPage from "./pages/alternant/AlternantPage.tsx";

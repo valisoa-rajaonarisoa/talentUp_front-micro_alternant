@@ -1,4 +1,4 @@
-import Entreprises from "../../components/entreprise/Entreprise";
+
 import Header from "../../layouts/header/Header";
 
 type Props = {};
@@ -10,7 +10,6 @@ const EntreprisePage = ({}: Props) => {
     <div className=" m-[20px]">
       <Header title="Entreprise" subtitle="Bienvenu page entreprise" />
 
-      <Entreprises/>
     </div>
   );
 };
