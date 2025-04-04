@@ -33,7 +33,7 @@ const UserMenu = () => {
   const handleLogout = () => {
     if (keycloak) {
       keycloak.logout({
-        redirectUri: window.location.origin,
+        redirectUri: import.meta.env.VITE_SERVICE_LOGOUT,
       });
     }
   };
