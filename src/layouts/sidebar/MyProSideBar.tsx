@@ -90,7 +90,7 @@ const MyProSidebar = () => {
       >
         <Menu>
           {/* ****entete , titre et le buttons** */}
-          <TitleSideBar space="admin" />
+          <TitleSideBar space="Alternant" />
 
           {/* ***********USERprofile** */}
           {!collapsed && <UserProfileSideBar userInfo={userInfo} />}

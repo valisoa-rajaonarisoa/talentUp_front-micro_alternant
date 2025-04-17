@@ -1,15 +1,16 @@
-import Header from "../../layouts/header/Header";
+import Header from "../../layouts/header/Header"
 
-type Props = {};
+type Props = {}
 
 const ApprenantPage = ({}: Props) => {
   return (
     <div className=" m-[20px]">
-      <Header title="Apprenant" subtitle="Bienvenu page Apprenant" />
+    <Header
+      title="Espace Apprenant"
+      subtitle="Bienvenu dans l'espace Apprenant"
+    />
+  </div>
+  )
+}
 
-     
-    </div>
-  );
-};
-
-export default ApprenantPage;
+export default ApprenantPage

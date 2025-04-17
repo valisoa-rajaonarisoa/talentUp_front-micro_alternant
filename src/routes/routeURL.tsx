@@ -1,17 +1,19 @@
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import SlowMotionVideoOutlinedIcon from "@mui/icons-material/SlowMotionVideoOutlined";
-import ApartmentIcon from "@mui/icons-material/Apartment";
-import SchoolIcon from "@mui/icons-material/School";
-import EngineeringIcon from "@mui/icons-material/Engineering";
 import { IRoute } from "../typescript/module";
 
-
+// Importations des icônes Material-UI
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import SlowMotionVideoOutlinedIcon from "@mui/icons-material/SlowMotionVideoOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import EngineeringOutlinedIcon from "@mui/icons-material/EngineeringOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 export const RouteURL: IRoute[] = [
   {
     path: "/",
     name: "dashboard",
-    icon: <HomeOutlinedIcon />, 
+    icon: <HomeOutlinedIcon />,
   },
   {
     path: "/webinaires",
@@ -21,17 +23,26 @@ export const RouteURL: IRoute[] = [
   {
     path: "/alternants",
     name: "alternants",
-    icon: <EngineeringIcon />,
+    icon: <EngineeringOutlinedIcon />,
   },
   {
-    path: "/entreprises",
-    name: "entreprises",
-    icon: <ApartmentIcon />,
+    path: "/agenda",
+    name: "agenda",
+    icon: <CalendarMonthOutlinedIcon />,
+  },
+  {
+    path: "/messenger",
+    name: "messenger",
+    icon: <MessageOutlinedIcon />,
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    icon: <PersonOutlineOutlinedIcon />,
   },
   {
     path: "/apprenants",
     name: "apprenants",
-    icon: <SchoolIcon />,
+    icon: <SchoolOutlinedIcon />,
   },
-  
 ];

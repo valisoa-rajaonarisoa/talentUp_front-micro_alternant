@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import {  Typography, useTheme } from "@mui/material";
 import { tokens } from "../../context/theme/theme";
 
 type Props = {
@@ -14,7 +14,7 @@ const Header = ({ title, subtitle }: Props) => {
 
   // ****************** R E N D E R ************************
   return (
-    <Box sx={{ mb: "10px"}}>
+    <div className=" mt-[80px] md:mt-0 xl:mt-0 mb-2">
       <Typography
         variant="h2" //le fontsize ou  hauter
         color={colors.grey[100]} //la couluer
@@ -27,7 +27,7 @@ const Header = ({ title, subtitle }: Props) => {
       <Typography variant="h4" color={colors.greenAccent[500]}>
         {subtitle}
       </Typography>
-    </Box>
+    </div>
   );
 };
 

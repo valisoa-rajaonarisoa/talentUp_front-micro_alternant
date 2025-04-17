@@ -1,4 +1,4 @@
-import { Box, IconButton} from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 
 import { useProSidebar } from "react-pro-sidebar";
 // import { useContext } from "react";
@@ -21,14 +21,6 @@ const ButtonGroups = ({}: Props) => {
   const { toggleSidebar, broken, rtl } = useProSidebar();
   return (
     <Box display="flex" sx={{ p: "2px" }}>
-      {/* <IconButton onClick={colorMode?.toggleColorMode}>
-        {theme.palette.mode === "dark" ? (
-          <LightModeOutlinedIcon fontSize="medium" />
-        ) : (
-          <DarkModeOutlinedIcon fontSize="medium" />
-        )}
-      </IconButton> */}
-
       {/* ********** language  ******** */}
       <Language />
 
